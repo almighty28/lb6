@@ -1,15 +1,12 @@
 <?php
-    //echo "<script>localStorage.clear();</script>";
-    //$i=0;
+    $message_string = "Сообщения клиента: ";
     $cursor=$collection_client->find(['login'=>$selected]);
-    echo "<table border = 1> <tr> <th>Сообщения</th></tr>";
     foreach($cursor as $document){
-        foreach($document['messages'] as $message){
-        echo "<tr> <th>$message</th></tr>";
-        //echo "<script>localStorage.setItem('$i','$message');</script>";
-        //$i++;
+        foreach($document['messages'] as $message)
+        {
+            $message_string .= $message;
+            $message_string .= "   ";
         }
     }
-    echo "</table>";
-
+    echo "$message_string";
 ?>
