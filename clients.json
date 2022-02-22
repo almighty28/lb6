@@ -1,0 +1,2 @@
+{"_id":{"$oid":"6202b81d5200bf596e49f8fb"},"login":"almighty","password":"ExamplePassword","IP":"127.0.0.1","balance":100.0,"messages":["message1","message2","message3"]}
+{"_id":{"$oid":"6202b8f15200bf596e49f8fc"},"login":"ExampleLogin","password":"ExapmlePassword2","IP":"166.207.39.242","balance":-10.0,"messages":["message4","message5"]}
